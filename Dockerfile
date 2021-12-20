@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk-alpine:16
+FROM azul/zulu-openjdk-alpine:17
 
 LABEL maintainer="git@notfab.net"
 
