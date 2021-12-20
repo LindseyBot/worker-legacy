@@ -16,6 +16,7 @@ public abstract class SlashConverter {
 
     protected FakeSlashData createData(GuildMessageReceivedEvent event, String path) {
         FakeSlashData data = new FakeSlashData();
+        data.setPath(path);
         data.setGuildId(event.getGuild().getIdLong());
         data.setChannelId(event.getChannel().getIdLong());
         data.setMessageId(event.getMessageIdLong());
