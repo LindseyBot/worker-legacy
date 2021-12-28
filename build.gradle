@@ -5,8 +5,8 @@ plugins {
 }
 
 group = 'net.lindseybot'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+version = '0.0.1'
+sourceCompatibility = targetCompatibility = '17'
 
 configurations {
     compileOnly {
@@ -39,7 +39,7 @@ bootJar {
 }
 
 dependencies {
-    implementation('net.notfab.lindsey:shared:0.2.8')
+    implementation('net.notfab.lindsey:shared:0.2.9')
     implementation("net.sf.trove4j:trove4j:3.0.3")
     implementation('net.dv8tion:JDA:4.3.0_339') {
         exclude module: 'opus-java'
@@ -57,8 +57,8 @@ dependencies {
     //implementation('org.mariadb.jdbc:mariadb-java-client')
     implementation('redis.clients:jedis:3.6.0')
 
-    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
