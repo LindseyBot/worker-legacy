@@ -39,7 +39,7 @@ bootJar {
 }
 
 dependencies {
-    implementation('net.notfab.lindsey:shared:0.2.9')
+    implementation('net.notfab.lindsey:shared:0.3.0')
     implementation("net.sf.trove4j:trove4j:3.0.3")
     implementation('net.dv8tion:JDA:4.3.0_339') {
         exclude module: 'opus-java'
