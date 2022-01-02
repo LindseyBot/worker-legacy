@@ -3,9 +3,9 @@ package net.lindseybot.legacy.commands;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
-import net.lindseybot.shared.entities.discord.Label;
 import net.lindseybot.legacy.models.SlashConverter;
 import net.lindseybot.legacy.services.FinderUtil;
+import net.lindseybot.shared.entities.discord.Label;
 import net.lindseybot.shared.worker.legacy.FakeOptionMapping;
 import net.lindseybot.shared.worker.legacy.FakeSlashData;
 import net.lindseybot.shared.worker.services.Messenger;
@@ -28,13 +28,12 @@ public class CookiesConverter extends SlashConverter {
     @Override
     public FakeSlashData convert(GuildMessageReceivedEvent event, String name, String[] args) {
         if (args.length == 0) {
-            // TODO: HELP
-            return null;
+            return this.createData(event, "cookies/balance");
         } else if (args.length == 1) {
             if (args[0].equalsIgnoreCase("daily")) {
                 return this.createData(event, "cookies/daily");
             }
-            // unknown subcommand
+            this.msg.reply(event, Label.raw("Invalid subcommand."));
             return null;
         } else {
             Member target = FinderUtil.findMember(args[0], event.getGuild());
