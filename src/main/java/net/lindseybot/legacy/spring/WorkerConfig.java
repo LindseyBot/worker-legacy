@@ -1,8 +1,8 @@
 package net.lindseybot.legacy.spring;
 
 import net.lindseybot.legacy.spring.properties.LegacyProperties;
-import net.lindseybot.properties.BotProperties;
-import net.lindseybot.worker.DefaultWorker;
+import net.lindseybot.shared.properties.BotProperties;
+import net.lindseybot.shared.worker.DefaultWorker;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

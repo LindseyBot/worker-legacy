@@ -2,7 +2,7 @@ package net.lindseybot.legacy.commands;
 
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.lindseybot.legacy.models.SlashConverter;
-import net.lindseybot.worker.legacy.FakeSlashData;
+import net.lindseybot.shared.worker.legacy.FakeSlashData;
 import org.springframework.stereotype.Component;
 
 @Component

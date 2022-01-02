@@ -1,7 +1,7 @@
 package net.lindseybot.legacy.spring;
 
 import net.dv8tion.jda.api.sharding.ShardManager;
-import net.lindseybot.worker.legacy.LegacyListener;
+import net.lindseybot.shared.worker.legacy.LegacyListener;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

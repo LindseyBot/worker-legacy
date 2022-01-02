@@ -3,12 +3,12 @@ package net.lindseybot.legacy.commands;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
-import net.lindseybot.entities.discord.Label;
+import net.lindseybot.shared.entities.discord.Label;
 import net.lindseybot.legacy.models.SlashConverter;
 import net.lindseybot.legacy.services.FinderUtil;
-import net.lindseybot.worker.legacy.FakeOptionMapping;
-import net.lindseybot.worker.legacy.FakeSlashData;
-import net.lindseybot.worker.services.Messenger;
+import net.lindseybot.shared.worker.legacy.FakeOptionMapping;
+import net.lindseybot.shared.worker.legacy.FakeSlashData;
+import net.lindseybot.shared.worker.services.Messenger;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;

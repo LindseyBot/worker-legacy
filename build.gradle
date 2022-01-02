@@ -26,11 +26,8 @@ repositories {
         url 'https://m2.dv8tion.net/releases'
     }
     maven {
-        url 'https://maven.pkg.github.com/LindseyBot/shared'
-        credentials {
-            username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-            password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
-        }
+        name 'lindsey'
+        url 'https://maven.lindseybot.net/repository/maven-lindsey/'
     }
 }
 
@@ -39,7 +36,7 @@ bootJar {
 }
 
 dependencies {
-    implementation('net.notfab.lindsey:shared:0.3.0')
+    implementation('net.lindseybot:shared:0.3.2')
     implementation("net.sf.trove4j:trove4j:3.0.3")
     implementation('net.dv8tion:JDA:4.3.0_339') {
         exclude module: 'opus-java'

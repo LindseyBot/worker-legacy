@@ -7,11 +7,11 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.sharding.ShardManager;
-import net.lindseybot.entities.discord.Label;
+import net.lindseybot.shared.entities.discord.Label;
 import net.lindseybot.legacy.models.SlashConverter;
 import net.lindseybot.legacy.services.LegacyService;
-import net.lindseybot.worker.legacy.FakeSlashData;
-import net.lindseybot.worker.services.Messenger;
+import net.lindseybot.shared.worker.legacy.FakeSlashData;
+import net.lindseybot.shared.worker.services.Messenger;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 

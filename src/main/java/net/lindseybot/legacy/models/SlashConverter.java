@@ -1,7 +1,7 @@
 package net.lindseybot.legacy.models;
 
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import net.lindseybot.worker.legacy.FakeSlashData;
+import net.lindseybot.shared.worker.legacy.FakeSlashData;
 
 public abstract class SlashConverter {
 
