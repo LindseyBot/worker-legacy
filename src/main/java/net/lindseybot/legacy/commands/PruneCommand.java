@@ -45,7 +45,7 @@ public class PruneCommand extends SlashConverter {
 
         FakeOptionMapping optCount = new FakeOptionMapping();
         optCount.setName("count");
-        optCount.setType(OptionType.NUMBER);
+        optCount.setType(OptionType.INTEGER);
         optCount.setValue(String.valueOf(count));
         data.getOptions().put(optCount.getName(), optCount);
 

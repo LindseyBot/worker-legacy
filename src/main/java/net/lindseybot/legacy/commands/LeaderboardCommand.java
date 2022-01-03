@@ -19,7 +19,7 @@ public class LeaderboardCommand extends SlashConverter {
     public FakeSlashData convert(GuildMessageReceivedEvent event, String name, String[] args) {
         FakeSlashData data = this.createData(event, "leaderboard");
         FakeOptionMapping option = new FakeOptionMapping();
-        option.setName("leaderboard");
+        option.setName("name");
         option.setType(OptionType.STRING);
         option.setValue("cookies");
         data.getOptions().put(option.getName(), option);

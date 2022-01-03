@@ -62,7 +62,7 @@ public class CookiesConverter extends SlashConverter {
             {
                 FakeOptionMapping option = new FakeOptionMapping();
                 option.setName("amount");
-                option.setType(OptionType.NUMBER);
+                option.setType(OptionType.INTEGER);
                 option.setValue(String.valueOf(cookies));
                 data.getOptions().put(option.getName(), option);
             }

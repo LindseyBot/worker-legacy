@@ -36,7 +36,7 @@ public class RollCommand extends SlashConverter {
             }
             FakeOptionMapping option = new FakeOptionMapping();
             option.setName("sides");
-            option.setType(OptionType.NUMBER);
+            option.setType(OptionType.INTEGER);
             option.setValue(String.valueOf(count));
             data.getOptions().put(option.getName(), option);
         }
