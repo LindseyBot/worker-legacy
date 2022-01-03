@@ -22,7 +22,7 @@ public class CookiesConverter extends SlashConverter {
 
     @Override
     public String[] getNames() {
-        return new String[]{"cookies"};
+        return new String[]{"cookies", "cookie"};
     }
 
     @Override
