@@ -12,7 +12,7 @@ public class Rule34Command extends SlashConverter {
 
     @Override
     public String[] getNames() {
-        return new String[]{"r34", "rule34"};
+        return new String[]{"r34", "rule34", "hentai"};
     }
 
     @Override
